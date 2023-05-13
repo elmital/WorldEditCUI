@@ -94,6 +94,7 @@ public class CUIListenerWorldRender
 			RenderSystem.enableDepthTest();
 			RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
 			RenderSystem.depthMask(true);
+			RenderSystem.disableDepthTest();
 			RenderSystem.lineWidth(LineStyle.DEFAULT_WIDTH);
 
 			final ShaderInstance oldShader = RenderSystem.getShader();
